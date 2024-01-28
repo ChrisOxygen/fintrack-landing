@@ -1,0 +1,86 @@
+.brand-logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: clamp(3.2rem, 5.333vw + 1.2rem, 6rem);
+
+    padding-top: clamp(10rem, 9.524vw + 6.429rem, 15rem);
+    padding-bottom: clamp(5rem, 11.238vw + 0.786rem, 10.9rem);
+
+    &__title {
+        color: #21263C;
+        text-align: center;
+        font-family: "Public Sans";
+        font-size: clamp(2.4rem, 1.143vw + 1.971rem, 3rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: clamp(2.8rem, 1.524vw + 2.229rem, 3.6rem);
+        /* 36px */
+        letter-spacing: -0.6px;
+        padding: 0 16px;
+    }
+}
+
+.brand-logos-carosel {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    animation: apt-from-heaven 20s cubic-bezier(.47, .47, .68, .68) infinite;
+
+    &--mobile {
+        margin-top: -10px;
+
+        @media (min-width: 865px) {
+            display: none;
+        }
+
+        animation: apt-from-heaven-reverse 20s cubic-bezier(.47, .47, .68, .68) infinite;
+    }
+
+}
+
+.brand-logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #FFF;
+    padding: 12px 20px;
+    flex-shrink: 0;
+
+    &__logo {
+        max-width: 100%;
+        height: clamp(2.7rem, 3.429vw + 1.414rem, 4.5rem);
+    }
+}
+
+@keyframes apt-from-heaven {
+
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes apt-from-heaven-reverse {
+
+    0% {
+        transform: translateX(-50%);
+    }
+
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

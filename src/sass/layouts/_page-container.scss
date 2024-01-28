@@ -1,0 +1,127 @@
+.page-container {
+    width: 100%;
+    background: #FAF9FF;
+    height: 100%;
+    min-height: 100vh;
+    display: block;
+
+    overflow: hidden;
+
+    @media (max-width: 1280px) {}
+
+
+
+}
+
+.box-container>div {
+    width: 100%;
+    max-width: 1260px;
+    margin: auto;
+
+
+}
+
+.hero-section {
+    width: 100%;
+    background: #0D110F;
+    position: relative;
+    height: clamp(80rem, 53.333vw + 60rem, 108rem);
+    overflow: hidden;
+
+    &__block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 5;
+
+    }
+
+
+
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 43px;
+}
+
+.site-logo {
+    width: clamp(10.8rem, 7.048vw + 8.157rem, 14.5rem);
+    flex-shrink: 0;
+}
+
+.auth-block {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+
+    @media (max-width: 865px) {
+        display: none;
+    }
+}
+
+.hero-content {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        color: var(--Text-color-white, #FFF);
+        text-align: center;
+        font-family: Poppins;
+        font-size: clamp(3.2rem, 5.333vw + 1.2rem, 6rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: clamp(4.1rem, 6.095vw + 1.814rem, 7.3rem);
+        /* 121.667% */
+
+        max-width: 743px;
+        width: 100%;
+
+        & span {
+            color: #FECB32;
+        }
+    }
+
+    &__desc {
+        max-width: 604px;
+        width: 100%;
+
+        color: #B3C7BB;
+        text-align: center;
+
+        /* Paragraph/large - medium */
+        font-family: Inter;
+        font-size: clamp(1.6rem, 0.381vw + 1.457rem, 1.8rem);
+        font-style: normal;
+        font-weight: 500;
+        line-height: clamp(2.4rem, 0.762vw + 2.114rem, 2.8rem);
+        /* 155.556% */
+
+        margin-top: 16px;
+        margin-bottom: 40px;
+    }
+
+    &__cta-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        flex-wrap: wrap;
+
+        margin-bottom: 50px;
+    }
+}
+
+.hero-content-image {
+    width: clamp(44.5rem, 155.238vw - 13.714rem, 126rem);
+    flex-shrink: 0;
+    border-radius: clamp(1rem, 3.81vw - 0.429rem, 3rem);
+    background: url(<path-to-image>), lightgray 0px -0.188px / 100.159% 93.5% no-repeat;
+    box-shadow: -5px -17px 150px 0px rgba(27, 81, 71, 0.30);
+}

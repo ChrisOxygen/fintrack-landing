@@ -1,0 +1,47 @@
+.circle {
+    position: absolute;
+    display: block;
+    z-index: 1;
+
+    &--1 {
+        width: clamp(27.1rem, 91.619vw - 7.257rem, 75.2rem);
+        height: clamp(19.6rem, 105.905vw - 20.114rem, 75.2rem);
+        transform: rotate(-90.037deg);
+        flex-shrink: 0;
+
+        border-radius: clamp(27.1rem, 91.619vw - 7.257rem, 75.2rem);
+        background: #0FE9CF;
+        filter: blur(clamp(21.7rem, 73.333vw - 5.8rem, 60.2rem));
+
+        top: clamp(15.3rem, -28.952vw + 26.157rem, 0.1rem);
+        right: clamp(-11.4rem, -49.905vw + 7.314rem, -37.6rem);
+    }
+
+    &--2 {
+        width: clamp(20.8rem, 70.286vw - 5.557rem, 57.7rem);
+        height: clamp(15.6rem, 84vw - 15.9rem, 59.7rem);
+        transform: rotate(90.002deg);
+        flex-shrink: 0;
+
+        border-radius: clamp(15.6rem, 84vw - 15.9rem, 59.7rem);
+        background: #00E0FF;
+        filter: blur(clamp(21.7rem, 73.333vw - 5.8rem, 60.2rem));
+
+        top: clamp(15.2rem, -28.952vw + 26.057rem, 0rem);
+        left: clamp(-9.4rem, -25.714vw + 0.243rem, -22.9rem);
+    }
+
+    &--3 {
+
+        width: clamp(18.4rem, 62.095vw - 4.886rem, 51rem);
+        height: clamp(18.4rem, 62.095vw - 4.886rem, 51rem);
+        flex-shrink: 0;
+
+        border-radius: clamp(18.4rem, 62.095vw - 4.886rem, 51rem);
+        background: #42AE9D;
+        filter: blur(clamp(9rem, 30.476vw - 2.429rem, 25rem));
+
+        top: clamp(18rem, -19.429vw + 25.286rem, 7.8rem);
+        left: clamp(9.5rem, 70.476vw - 16.929rem, 46.5rem);
+    }
+}

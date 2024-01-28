@@ -1,0 +1,101 @@
+.map-section {}
+
+.map-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: clamp(7.2rem, 9.28vw + 3.72rem, 13rem) 0;
+    gap: clamp(3rem, 5.714vw + 0.857rem, 6rem);
+}
+
+.map-block-desc-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    max-width: 493px;
+    width: 1005;
+
+    &__desc {
+        color: #FE7747;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        /* 175% */
+    }
+
+    &__title {
+        color: var(--Black, #1D1E25);
+        font-family: Poppins;
+        font-size: clamp(3.2rem, 3.048vw + 2.057rem, 4.8rem);
+        font-style: normal;
+        font-weight: 600;
+        line-height: clamp(4.1rem, 3.048vw + 2.957rem, 5.7rem);
+        letter-spacing: -1px;
+
+        text-align: center;
+
+        // margin-bottom: 60px;
+
+        & span {
+            color: #FE7747;
+        }
+    }
+}
+
+.map-image {
+
+    & img {
+        max-width: 100%;
+    }
+}
+
+.map-stats-block {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    gap: clamp(2.4rem, 3.048vw + 1.257rem, 4rem);
+
+    @media (max-width: 1000px) {
+
+
+        flex-direction: column;
+
+
+    }
+}
+
+.map-stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: clamp(0.2rem, 2.476vw - 0.729rem, 1.5rem);
+
+    max-width: 248px;
+    width: 100%;
+
+    &__count {
+        color: var(--Black, #040404);
+        font-family: Poppins;
+        font-size: clamp(2rem, 4.571vw + 0.286rem, 4.4rem);
+        font-style: normal;
+        font-weight: 600;
+        line-height: clamp(3rem, 3.048vw + 1.857rem, 4.6rem);
+        /* 104.545% */
+    }
+
+    &__desc {
+        color: #757B8A;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 162.5% */
+    }
+}

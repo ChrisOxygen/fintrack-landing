@@ -1,0 +1,24 @@
+{
+  "menuTabs": [
+    { "tabTitle": "home", "childrenTabs": [] },
+    { "tabTitle": "Pricing", "childrenTabs": [] },
+    { "tabTitle": "services", "childrenTabs": [] },
+    {
+      "tabTitle": "blogs",
+      "childrenTabs": [
+        { "tabTitle": "savings", "childrenTabs": [] },
+        { "tabTitle": "accounting", "childrenTabs": [] },
+        { "tabTitle": "investing", "childrenTabs": [] }
+      ]
+    }
+  ],
+  "socialProfLogos": [
+    "Airbnb",
+    "Descript",
+    "Google",
+    "Grammarly",
+    "Groupon",
+    "Microsoft",
+    "Notion"
+  ]
+}
