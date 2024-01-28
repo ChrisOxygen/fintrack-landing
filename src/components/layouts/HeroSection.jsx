@@ -1,9 +1,10 @@
-import Header from "../header";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { IoPlay } from "react-icons/io5";
 
 import { motion } from "framer-motion";
 import HeroDesc from "../HeroDesc";
+
+import Header from "../Header";
 
 const textVarian = {
   initial: {

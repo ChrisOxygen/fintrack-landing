@@ -3,7 +3,7 @@ import MobileNavToggle from "./MobileNavToggle";
 
 function Header() {
   return (
-    <header className="header">
+    <div className="header">
       <img src="/assets/header-logo.png" alt="" className="site-logo" />
       <menu className="header-nav-list">
         <li className="header-nav-list__item header-nav-list__item--active">
@@ -23,7 +23,7 @@ function Header() {
         <button className="sign-up-btn">SIGN UP</button>
       </div>
       <MobileNavToggle />
-    </header>
+    </div>
   );
 }
 
