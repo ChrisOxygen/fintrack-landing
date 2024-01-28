@@ -14,7 +14,13 @@ function SpecialitiesSection({ variant }) {
       <span className="bg-circle bg-circle--bottom"></span>
       <div>
         <div className="specialities-block">
-          <motion.div variants={variant} className="special-feature-block">
+          <motion.div
+            variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="special-feature-block"
+          >
             <span className="special-feature-block__desc">Features</span>
             <h2 className="special-feature-block__title">
               Our Platform specially designed for everyone.
@@ -26,7 +32,13 @@ function SpecialitiesSection({ variant }) {
               </span>
             </button>
           </motion.div>
-          <motion.div variants={variant} className="specialty-block">
+          <motion.div
+            variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="specialty-block"
+          >
             <div className="specialty-block__img">
               <IoRocketOutline />
             </div>
@@ -36,7 +48,13 @@ function SpecialitiesSection({ variant }) {
               with their work.
             </p>
           </motion.div>
-          <motion.div variants={variant} className="specialty-block">
+          <motion.div
+            variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="specialty-block"
+          >
             <div className="specialty-block__img">
               <IoMegaphoneOutline />
             </div>
@@ -46,7 +64,13 @@ function SpecialitiesSection({ variant }) {
               to build the culture you desire.
             </p>
           </motion.div>
-          <motion.div variants={variant} className="specialty-block">
+          <motion.div
+            variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="specialty-block"
+          >
             <div className="specialty-block__img">
               <LiaChartBarSolid />
             </div>
@@ -56,7 +80,13 @@ function SpecialitiesSection({ variant }) {
               innovation.
             </p>
           </motion.div>
-          <motion.div variants={variant} className="specialty-block">
+          <motion.div
+            variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="specialty-block"
+          >
             <div className="specialty-block__img">
               <IoTrendingUpSharp />
             </div>

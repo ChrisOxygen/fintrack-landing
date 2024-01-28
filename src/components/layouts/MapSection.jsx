@@ -6,16 +6,28 @@ function MapSection({ variant }) {
     <div className="map-section box-container p-x">
       <div>
         <div className="map-block">
-          <motion.div variants={variant} className="map-block-desc-title">
+          <motion.div
+            variants={variant}
+            initial="initial"
+            className="map-block-desc-title"
+          >
             <span className="map-block-desc-title__desc">Global Scale</span>
             <h2 className="map-block-desc-title__title">
               Trusted by company around <span>the World</span>
             </h2>
           </motion.div>
-          <motion.div variants={variant} className="map-image">
+          <motion.div
+            variants={variant}
+            whileInView="animate"
+            className="map-image"
+          >
             <img src="/assets/Map.png" alt="" />
           </motion.div>
-          <motion.div variants={variant} className="map-stats-block">
+          <motion.div
+            variants={variant}
+            viewport={{ once: true }}
+            className="map-stats-block"
+          >
             <div className="map-stat-box">
               <h4 className="map-stat-box__count">350+</h4>
               <span className="map-stat-box__desc">

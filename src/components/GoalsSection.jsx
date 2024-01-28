@@ -11,6 +11,9 @@ function GoalsSection({ variant }) {
           <div className="goals-block-content">
             <motion.h2
               variants={variant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
               className="goals-block-content__title"
             >
               Reach your goals by using <span>Dashboard</span>
@@ -23,7 +26,13 @@ function GoalsSection({ variant }) {
               discount!
             </motion.p>
           </div>
-          <motion.div variants={variant} className="goals-block__img">
+          <motion.div
+            variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="goals-block__img"
+          >
             <img src="/assets/reach-your-goals.png" alt="" className="" />
           </motion.div>
         </div>

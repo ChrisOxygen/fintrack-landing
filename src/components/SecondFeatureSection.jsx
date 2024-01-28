@@ -32,6 +32,9 @@ function SecondFeatureSection({ variant }) {
         <div className="second-feature-block">
           <motion.div
             variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
             className="second-feature-block-content"
           >
             <h2 className="second-feature-block-content__title">
@@ -93,7 +96,13 @@ function SecondFeatureSection({ variant }) {
               </div>
             </div>
           </motion.div>
-          <motion.div variants={variant} className="second-feature-block__img">
+          <motion.div
+            variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="second-feature-block__img"
+          >
             <img src="/assets/desktop-feature2-img.png" alt="" />
           </motion.div>
         </div>

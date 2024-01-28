@@ -11,10 +11,18 @@ function TestimonialSection({ variant }) {
       <span className="bg-circle bg-circle--bottom"></span>
       <div>
         <div className="testimonial-block">
-          <motion.h2 variants={variant} className="testimonial-block__title">
+          <motion.h2
+            variants={variant}
+            initial="initial"
+            className="testimonial-block__title"
+          >
             We love our user because they <span>love us.</span>
           </motion.h2>
-          <motion.div variants={variant} className="testimonial-nav">
+          <motion.div
+            variants={variant}
+            whileInView="animate"
+            className="testimonial-nav"
+          >
             <div className="testimonial-nav__icon testimonial-nav__icon--left">
               <IoChevronBackOutline />
             </div>
@@ -22,7 +30,11 @@ function TestimonialSection({ variant }) {
               <IoChevronForwardOutline />
             </div>
           </motion.div>
-          <motion.div variants={variant} className="testimonials">
+          <motion.div
+            variants={variant}
+            viewport={{ once: true }}
+            className="testimonials"
+          >
             <div className="single-testimonial">
               <div className="single-testimonial__logo">
                 <img src="/assets/shopify-logo.png" alt="" />

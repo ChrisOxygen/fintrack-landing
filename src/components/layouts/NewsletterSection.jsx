@@ -7,7 +7,13 @@ function NewsletterSection({ variant }) {
       <span className="bg-circle"></span>
       <div>
         <div className="newsletter-block">
-          <motion.div variants={variant} className="newsletter-content-box">
+          <motion.div
+            variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="newsletter-content-box"
+          >
             <h2 className="newsletter-content-box__title">
               <span>Subscribe</span> to our newsletter
             </h2>
@@ -21,6 +27,9 @@ function NewsletterSection({ variant }) {
           </span>
           <motion.div
             variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
             className="newsletter-form-box"
             id="news"
           >

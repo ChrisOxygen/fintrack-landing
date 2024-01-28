@@ -33,6 +33,9 @@ function FirstFeatureSection({ variant }) {
           <div className="first-feature-block__img-box">
             <motion.img
               variants={variant}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
               className="first-feature-block__img-box first-feature-block__img-box--desktop"
               src="/assets/desktop-feature-img.png"
               alt=""
@@ -45,6 +48,9 @@ function FirstFeatureSection({ variant }) {
           </div>
           <motion.div
             variants={variant}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
             className="first-feature-block-content"
           >
             <h2 className="first-feature-block-content__title">
