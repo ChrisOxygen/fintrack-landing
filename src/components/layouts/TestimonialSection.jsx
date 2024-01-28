@@ -14,13 +14,17 @@ function TestimonialSection({ variant }) {
           <motion.h2
             variants={variant}
             initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
             className="testimonial-block__title"
           >
             We love our user because they <span>love us.</span>
           </motion.h2>
           <motion.div
             variants={variant}
+            initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             className="testimonial-nav"
           >
             <div className="testimonial-nav__icon testimonial-nav__icon--left">
@@ -32,6 +36,8 @@ function TestimonialSection({ variant }) {
           </motion.div>
           <motion.div
             variants={variant}
+            initial="initial"
+            whileInView="animate"
             viewport={{ once: true }}
             className="testimonials"
           >

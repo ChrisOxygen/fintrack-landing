@@ -9,6 +9,8 @@ function MapSection({ variant }) {
           <motion.div
             variants={variant}
             initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
             className="map-block-desc-title"
           >
             <span className="map-block-desc-title__desc">Global Scale</span>
@@ -18,13 +20,17 @@ function MapSection({ variant }) {
           </motion.div>
           <motion.div
             variants={variant}
+            initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             className="map-image"
           >
             <img src="/assets/Map.png" alt="" />
           </motion.div>
           <motion.div
             variants={variant}
+            initial="initial"
+            whileInView="animate"
             viewport={{ once: true }}
             className="map-stats-block"
           >
